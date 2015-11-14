@@ -1,0 +1,80 @@
+@import "bourbon/bourbon"
+@import "normalize"
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+
+$amarillo: #F4AF00
+$amarillo_oscuro: #E5AF13
+$azul: #0C4966
+$naranja: #E67016
+
+*, *::before, *::after
+    box-sizing: border-box
+    font-family: 'Monserrat', sans-serif
+
+h1, h2, h3, h4, h5, h6
+    font-family: 'Raleway', sans-serif
+
+.Header
+    background: url("../images/headerBK.jpg")
+    height: 370px
+    position: absolute
+    top: 0
+    width: 100%
+    &-logo
+        position: absolute
+        left: 50%
+        +transform(translateX(-50%))
+        z-index: 10
+
+.MainContent
+    margin: 95px auto 0
+    max-width: 960px
+    padding: 1em
+    position: relative
+    border: 0.25em solid $amarillo_oscuro
+    z-index: 9
+
+.Menu
+    padding-bottom: 1em
+    border-bottom: 2px solid $azul
+    &-list
+        margin: 0
+        padding: 0
+        list-style: none
+        display: flex
+        +justify-content(space-between)
+    &-item
+        text-align: center
+        width: 25%
+    &-link
+        text-decoration: none
+        color: $azul
+        font-weight: bold
+        &:hover
+            text-decoration: underline
+
+.Item
+    border-bottom: 1px solid $naranja
+    padding-bottom: 1em
+    &-title
+        text-align: center
+    &-top
+        display: flex
+    &-video
+        width: 560px
+    &-info
+        span
+            display: inline-block
+            font-weight: bold
+            padding-right: 0.5em
+            text-align: right
+            width: 100px
+
+.Footer
+    background-color: $azul
+    color: white
+    padding: 0.5em 0
+    text-align: center
+    margin-top: 1em
+

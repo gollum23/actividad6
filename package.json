@@ -1,0 +1,14 @@
+{
+  "name": "actividad-6",
+  "version": "1.0.0",
+  "description": "Actividad 6 del curso de diseño web",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Forero",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
